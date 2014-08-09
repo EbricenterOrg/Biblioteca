@@ -76,3 +76,19 @@ C:\Users\carol\Desktop\Modulo Libro Final\Prototipo\Prototipo\obj\x86\Debug\Prot
 C:\Users\carol\Desktop\Modulo Libro Final\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfMenuAdministrador.resources
 C:\Users\carol\Desktop\Modulo Libro Final\Prototipo\Prototipo\obj\x86\Debug\Prototipo.Principal.wfMenuAdministrador.resources
 C:\Users\carol\Desktop\Modulo Libro Final\Prototipo\Prototipo\obj\x86\Debug\Prototipo.alquiler.wfentrega_libro.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.exe
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.pdb
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.csprojResolveAssemblyReference.cache
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.alquiler.wfentrega_libro.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfAutor.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCorrienteLiteraria.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfEditorial.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIngresoLibro.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfMateria.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIniciarSesion.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.Principal.wfMenuAdministrador.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.Properties.Resources.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfAcercaDe.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfMenuAdministrador.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIngresoPersonas.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Biblioteca\Prototipo\Prototipo\obj\x86\Debug\Prototipo.csproj.GenerateResource.Cache

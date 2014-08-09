@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1E432AE-69D5-4C8B-B07F-440C7934C2D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prototipo</RootNamespace>
+    <AssemblyName>Prototipo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Corriente Literaria\wfCLiteraria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Corriente Literaria\wfCLiteraria.designer.cs">
+      <DependentUpon>wfCLiteraria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\wfCAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\wfCAutor.designer.cs">
+      <DependentUpon>wfCAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\wfCMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\wfCMateria.designer.cs">
+      <DependentUpon>wfCMateria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libros\wfEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libros\wfEditar.designer.cs">
+      <DependentUpon>wfEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libros\wfEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libros\wfEliminar.designer.cs">
+      <DependentUpon>wfEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\wfCEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\wfCEditorial.designer.cs">
+      <DependentUpon>wfCEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\wfIngresoPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\wfIngresoPersonas.designer.cs">
+      <DependentUpon>wfIngresoPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libros\wfIngresarLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libros\wfIngresarLibros.designer.cs">
+      <DependentUpon>wfIngresarLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libros\wfAlquiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libros\wfAlquiler.designer.cs">
+      <DependentUpon>wfAlquiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Principal\wfAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\wfAcercaDe.designer.cs">
+      <DependentUpon>wfAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libros\wfBusquedaLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libros\wfBusquedaLibro.designer.cs">
+      <DependentUpon>wfBusquedaLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\wfIniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\wfIniciarSesion.designer.cs">
+      <DependentUpon>wfIniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\wfMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\wfMenuPrincipal.designer.cs">
+      <DependentUpon>wfMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Corriente Literaria\wfCLiteraria.resx">
+      <DependentUpon>wfCLiteraria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\wfCAutor.resx">
+      <DependentUpon>wfCAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\wfCMateria.resx">
+      <DependentUpon>wfCMateria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libros\wfEditar.resx">
+      <DependentUpon>wfEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libros\wfEliminar.resx">
+      <DependentUpon>wfEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\wfCEditorial.resx">
+      <DependentUpon>wfCEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\wfIngresoPersonas.resx">
+      <DependentUpon>wfIngresoPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libros\wfIngresarLibros.resx">
+      <DependentUpon>wfIngresarLibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libros\wfAlquiler.resx">
+      <DependentUpon>wfAlquiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Principal\wfAcercaDe.resx">
+      <DependentUpon>wfAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libros\wfBusquedaLibro.resx">
+      <DependentUpon>wfBusquedaLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\wfIniciarSesion.resx">
+      <DependentUpon>wfIniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\wfMenuPrincipal.resx">
+      <DependentUpon>wfMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="iconos\Thumbs.db" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconos\Aceptar.ico" />
+    <Content Include="iconos\Ajustes.png" />
+    <Content Include="iconos\Bases.ico" />
+    <Content Include="iconos\Buscar.ico" />
+    <Content Include="iconos\Cancelar.ico" />
+    <Content Include="iconos\Copiar.ico" />
+    <Content Include="iconos\Cortar.ico" />
+    <Content Include="iconos\Eliminar.ico" />
+    <Content Include="iconos\Guardar.ico" />
+    <Content Include="iconos\Limpiar.ico" />
+    <Content Include="iconos\Modificar.ico" />
+    <Content Include="iconos\Nuevo.ico" />
+    <Content Include="iconos\Pegar.ico" />
+    <Content Include="iconos\Refrescar.png" />
+    <Content Include="iconos\Regresar.ico" />
+    <Content Include="iconos\Reportes.ico" />
+    <Content Include="iconos\Salir.png" />
+    <Content Include="iconos\Siguiente.ico" />
+    <Content Include="imagenes\favicon.ico" />
+    <Content Include="imagenes\favicon.JPG" />
+    <Content Include="imagenes\library-icon.png" />
+    <None Include="Resources\Loading.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Modify.png" />
+    <None Include="Resources\Add1.png" />
+    <None Include="Resources\Fondo completo.JPG" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

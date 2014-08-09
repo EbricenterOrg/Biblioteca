@@ -1,0 +1,40 @@
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.Properties.Resources.resources
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfAcercaDe.resources
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIniciarSesion.resources
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.btnprodu.resources
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.csproj.GenerateResource.Cache
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\bin\Debug\Prototipo.exe
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\bin\Debug\Prototipo.pdb
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.exe
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.pdb
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfBusquedaLibro.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfAlquiler.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIngresarLibros.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIngresoPersonas.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCLiteraria.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCAutor.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCEditorial.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfEditar.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfEliminar.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCmateria.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.csprojResolveAssemblyReference.cache
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.exe
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.pdb
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\bin\Debug\Prototipo.exe
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\bin\Debug\Prototipo.pdb
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.csprojResolveAssemblyReference.cache
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCLiteraria.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCAutor.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCMateria.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfEditar.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfEliminar.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCEditorial.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIngresoPersonas.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIngresarLibros.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfAlquiler.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.Properties.Resources.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfAcercaDe.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfBusquedaLibro.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIniciarSesion.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.btnprodu.resources
+C:\Users\MiShElL\Tracing\Documents\GitHub\Biblioteca\Prototipo Presentación\Prototipo\Prototipo\obj\x86\Debug\Prototipo.csproj.GenerateResource.Cache
