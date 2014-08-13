@@ -15,6 +15,7 @@ namespace Prototipo
 {
     public partial class wfBusquedaLibro : Form
     {
+        string gsQuery;
         public wfBusquedaLibro()
         {
             InitializeComponent();
@@ -37,12 +38,13 @@ namespace Prototipo
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            txtAutor.Enabled = true;
-            txtEdicion.Enabled = true;
-            txtEditorial.Enabled = true;
-            txtNombre.Enabled = true;
-            txtTitulo.Enabled = true;
-            txtVolumen.Enabled = true;
+            conexion.ObtenerConexion();
+            using (MySqlConnection conexion = dbiblioteca.ObtenerConexion()) ;
+            gsQuery = "select a.id_lib, a.nombre_lib, titulo_lib, a.edicion_lib, a.volumen_lib, a.tab_autor_id_autor, a.tab_editorial_id_edit, a.tab_corriente_idliteraria_corriente, b.id_autor, b.nombre_autor, b.apellido_autor, c.id_edit, c.nombre_edit from tab_libro a, tab_autor b, tab_editorial c where a.tab_autor_id_autor = b.id_autor and (b.nombre_autor like '" + txtBuscarDato.Text + "%' or a.nombre_lib like '" + txtBuscarDato.Text + "%', or a.volumen_lib like '" + txtBuscarDato.Text + "%', or a.edicion_lib like '" + txtBuscarDato.Text + "%') order by nombre_lib asc;";
+            MysqlConnection reader = comando.ExcuteReader();
+
+            conectar.Open();
+            return conectar;
         }
 
         private void cboTipobusqueda_SelectedIndexChanged(object sender, EventArgs e)
@@ -57,68 +59,25 @@ namespace Prototipo
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-          txtAutor.Clear();
-            txtEdicion.Clear();
-                txtEditorial.Clear();
-                    txtNombre.Clear();
-                        txtTitulo.Clear();
-                            txtVolumen.Clear();
-                                txtNombre.Focus();
+            txtBuscarDato.Text = "";
         }
 
-        private void txtNombre_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            txtAutor.Enabled = false;
-            txtEdicion.Enabled = false;
-            txtEditorial.Enabled = false;
-            txtTitulo.Enabled = false;
-            txtVolumen.Enabled = false;
-
+            conexion.ObtenerConexion();
+            MessageBox.Show("Conectado");
         }
 
-        private void txtTitulo_TextChanged(object sender, EventArgs e)
+        private void grbTipoBusqueda_Enter(object sender, EventArgs e)
         {
-            txtAutor.Enabled = false;
-            txtEdicion.Enabled = false;
-            txtEditorial.Enabled = false;
-            txtNombre.Enabled = false;
-            txtVolumen.Enabled = false;
+
         }
 
-        private void txtAutor_TextChanged(object sender, EventArgs e)
+        private void txtBuscarDato_KeyPress(object sender, KeyPressEventArgs e)
         {
-            txtEdicion.Enabled = false;
-            txtEditorial.Enabled = false;
-            txtNombre.Enabled = false;
-            txtVolumen.Enabled = false;
-            txtTitulo.Enabled = false;
+            e.Handled = true;
+            btnBuscar_Click(this, e);
         }
 
-        private void txtEditorial_TextChanged(object sender, EventArgs e)
-        {
-            txtEdicion.Enabled = false;
-            txtAutor.Enabled = false;
-            txtNombre.Enabled = false;
-            txtVolumen.Enabled = false;
-            txtTitulo.Enabled = false;
-        }
-
-        private void txtEdicion_TextChanged(object sender, EventArgs e)
-        {
-            txtAutor.Enabled = false;
-            txtEditorial.Enabled = false;
-            txtNombre.Enabled = false;
-            txtTitulo.Enabled = false;
-            txtVolumen.Enabled = false;
-        }
-
-        private void txtVolumen_TextChanged(object sender, EventArgs e)
-        {
-            txtAutor.Enabled = false;
-            txtEditorial.Enabled = false;
-            txtNombre.Enabled = false;
-            txtTitulo.Enabled = false;
-            txtEdicion.Enabled = false;
-        }
     }
 }
