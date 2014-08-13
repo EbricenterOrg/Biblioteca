@@ -1,0 +1,91 @@
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.Properties.Resources.resources
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfAcercaDe.resources
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIniciarSesion.resources
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.csproj.GenerateResource.Cache
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\bin\Debug\Prototipo.exe
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\bin\Debug\Prototipo.pdb
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.exe
+C:\Users\Rodrigo\documents\visual studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.pdb
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfBusquedaLibro.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfAlquiler.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIngresarLibros.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCLiteraria.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCAutor.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCEditorial.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfEditar.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfEliminar.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCmateria.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfMenuPrincipal1.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCPersonas.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCLogin.resources
+C:\Users\Rodrigo\Documents\Visual Studio 2010\Projects\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfBuscarPersona.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.exe
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.pdb
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.csprojResolveAssemblyReference.cache
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCPersonas.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.Properties.Resources.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfAcercaDe.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIniciarSesion.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCLogin.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfBuscarPersona.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.csproj.GenerateResource.Cache
+C:\Users\carol\Desktop\Prototipo\Prototipo\bin\Debug\Prototipo.exe
+C:\Users\carol\Desktop\Prototipo\Prototipo\bin\Debug\Prototipo.pdb
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.alquiler.wfentrega_libro.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfAutor.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfBusquedaLibro.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfCorrienteLiteraria.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfEditar.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfEditorial.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfIngresoLibro.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfMateria.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.Principal.wfMenuAdmin.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.wfMenuBibliotecario.resources
+C:\Users\carol\Desktop\Prototipo\Prototipo\obj\x86\Debug\Prototipo.alquiler.wfAlquiler.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.exe
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.pdb
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\bin\Debug\Prototipo.exe
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\bin\Debug\Prototipo.pdb
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.alquiler.wfAlquiler.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.alquiler.wfentrega_libro.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfCPersonas.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfAutor.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfBusquedaLibro.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfCorrienteLiteraria.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfEditar.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfEditorial.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfIngresoLibro.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfMateria.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfAcercaDe.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfIniciarSesion.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.Principal.wfMenuAdmin.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfMenuBibliotecario.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.Properties.Resources.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfCLogin.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfBuscarPersona.resources
+C:\Users\Rodrigo\Desktop\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.csproj.GenerateResource.Cache
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.exe
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.pdb
+C:\Users\carol\Documents\Prototipofinal\Prototipo\bin\Debug\Prototipo.exe
+C:\Users\carol\Documents\Prototipofinal\Prototipo\bin\Debug\Prototipo.pdb
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.csprojResolveAssemblyReference.cache
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.alquiler.wfAlquiler.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.alquiler.wfentrega_libro.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfCLogin.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfBuscarPersona.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfCPersonas.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfAutor.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfBusquedaLibro.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfCorrienteLiteraria.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfEditar.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfEditorial.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfIngresoLibro.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfMateria.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfAcercaDe.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfIniciarSesion.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.Principal.wfMenuAdmin.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.wfMenuBibliotecario.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.Properties.Resources.resources
+C:\Users\carol\Documents\Prototipofinal\Prototipo\obj\x86\Debug\Prototipo.csproj.GenerateResource.Cache
