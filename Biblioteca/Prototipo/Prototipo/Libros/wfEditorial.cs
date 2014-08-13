@@ -76,11 +76,11 @@ namespace Prototipo
                 MessageBox.Show("Hay Uno o mas Campos Vacios!", "Campos Vacios!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
             {
-                conexion.ObtenerConexion();
+                csConexion.ObtenerConexion();
                 //MessageBox.Show("Conectado");
                 a = "";
 
-                MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_editorial values ('{0}','{1}','{2}','{3}','{4}')", a, txtNomEdit.Text, txtDirec.Text, txtTel.Text, txtCiudad.Text), conexion.ObtenerConexion());
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_editorial values ('{0}','{1}','{2}','{3}','{4}')", a, txtNomEdit.Text, txtDirec.Text, txtTel.Text, txtCiudad.Text), csConexion.ObtenerConexion());
 
                 giEnviar = comando.ExecuteNonQuery();
                 iBandera = 1;
@@ -90,6 +90,8 @@ namespace Prototipo
             {
                 MessageBox.Show("Autor Guardado Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimpiarTextBox(this);
+                txtNomEdit.Focus();
+
             }
             else
             {

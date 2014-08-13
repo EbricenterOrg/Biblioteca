@@ -28,148 +28,145 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cbofecha = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wfIngresoLibro));
+            this.txtNomLib = new System.Windows.Forms.TextBox();
+            this.btnIngreso = new System.Windows.Forms.Button();
+            this.lblNomLib = new System.Windows.Forms.Label();
+            this.txtLib = new System.Windows.Forms.TextBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.txtNoPag = new System.Windows.Forms.TextBox();
+            this.lblNoPag = new System.Windows.Forms.Label();
+            this.lblVol = new System.Windows.Forms.Label();
+            this.nudVol = new System.Windows.Forms.NumericUpDown();
+            this.lblEdi = new System.Windows.Forms.Label();
+            this.lblEdit = new System.Windows.Forms.Label();
             this.cboEdit = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblEstant = new System.Windows.Forms.Label();
             this.cboAutor = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblAutor = new System.Windows.Forms.Label();
             this.cboCorriente = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblCorriLite = new System.Windows.Forms.Label();
+            this.lblMat = new System.Windows.Forms.Label();
             this.cboMat = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.lblEjem = new System.Windows.Forms.Label();
+            this.nudEjem = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.lblEntre = new System.Windows.Forms.Label();
             this.cboEstante = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage = new System.Windows.Forms.TabPage();
+            this.nudEdi = new System.Windows.Forms.NumericUpDown();
+            this.cboEntre = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.cboApellido = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVol)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEjem)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEdi)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtNomLib
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtNomLib.Location = new System.Drawing.Point(117, 14);
+            this.txtNomLib.Name = "txtNomLib";
+            this.txtNomLib.Size = new System.Drawing.Size(100, 20);
+            this.txtNomLib.TabIndex = 0;
+            this.txtNomLib.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button1
+            // btnIngreso
             // 
-            this.button1.Location = new System.Drawing.Point(483, 392);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnIngreso.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIngreso.BackgroundImage")));
+            this.btnIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnIngreso.Location = new System.Drawing.Point(666, 439);
+            this.btnIngreso.Name = "btnIngreso";
+            this.btnIngreso.Size = new System.Drawing.Size(44, 36);
+            this.btnIngreso.TabIndex = 1;
+            this.btnIngreso.UseVisualStyleBackColor = true;
+            this.btnIngreso.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cbofecha
+            // lblNomLib
             // 
-            this.cbofecha.FormattingEnabled = true;
-            this.cbofecha.Location = new System.Drawing.Point(116, 127);
-            this.cbofecha.Name = "cbofecha";
-            this.cbofecha.Size = new System.Drawing.Size(121, 21);
-            this.cbofecha.TabIndex = 2;
-            this.cbofecha.Text = "2014";
+            this.lblNomLib.AutoSize = true;
+            this.lblNomLib.Location = new System.Drawing.Point(26, 20);
+            this.lblNomLib.Name = "lblNomLib";
+            this.lblNomLib.Size = new System.Drawing.Size(70, 13);
+            this.lblNomLib.TabIndex = 3;
+            this.lblNomLib.Text = "Nombre Libro";
             // 
-            // label1
+            // txtLib
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Nombre Libro";
+            this.txtLib.Location = new System.Drawing.Point(117, 40);
+            this.txtLib.Name = "txtLib";
+            this.txtLib.Size = new System.Drawing.Size(100, 20);
+            this.txtLib.TabIndex = 4;
             // 
-            // textBox2
+            // lblTitulo
             // 
-            this.textBox2.Location = new System.Drawing.Point(117, 40);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Location = new System.Drawing.Point(26, 47);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(33, 13);
+            this.lblTitulo.TabIndex = 5;
+            this.lblTitulo.Text = "Titulo";
             // 
-            // label2
+            // txtNoPag
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Titulo";
+            this.txtNoPag.Location = new System.Drawing.Point(117, 66);
+            this.txtNoPag.Name = "txtNoPag";
+            this.txtNoPag.Size = new System.Drawing.Size(100, 20);
+            this.txtNoPag.TabIndex = 6;
             // 
-            // textBox3
+            // lblNoPag
             // 
-            this.textBox3.Location = new System.Drawing.Point(117, 66);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.lblNoPag.AutoSize = true;
+            this.lblNoPag.Location = new System.Drawing.Point(26, 73);
+            this.lblNoPag.Name = "lblNoPag";
+            this.lblNoPag.Size = new System.Drawing.Size(62, 13);
+            this.lblNoPag.TabIndex = 7;
+            this.lblNoPag.Text = "No Paginas";
             // 
-            // label3
+            // lblVol
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 73);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "No Paginas";
+            this.lblVol.AutoSize = true;
+            this.lblVol.Location = new System.Drawing.Point(26, 98);
+            this.lblVol.Name = "lblVol";
+            this.lblVol.Size = new System.Drawing.Size(48, 13);
+            this.lblVol.TabIndex = 8;
+            this.lblVol.Text = "Volumen";
             // 
-            // label4
+            // nudVol
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 98);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Volumen";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(117, 92);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 9;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.nudVol.Location = new System.Drawing.Point(117, 92);
+            this.nudVol.Name = "nudVol";
+            this.nudVol.Size = new System.Drawing.Size(120, 20);
+            this.nudVol.TabIndex = 9;
+            this.nudVol.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.nudVol.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
-            // label5
+            // lblEdi
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(26, 130);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Edicion";
+            this.lblEdi.AutoSize = true;
+            this.lblEdi.Location = new System.Drawing.Point(26, 130);
+            this.lblEdi.Name = "lblEdi";
+            this.lblEdi.Size = new System.Drawing.Size(42, 13);
+            this.lblEdi.TabIndex = 10;
+            this.lblEdi.Text = "Edicion";
             // 
-            // label6
+            // lblEdit
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 158);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Editorial";
+            this.lblEdit.AutoSize = true;
+            this.lblEdit.Location = new System.Drawing.Point(26, 158);
+            this.lblEdit.Name = "lblEdit";
+            this.lblEdit.Size = new System.Drawing.Size(44, 13);
+            this.lblEdit.TabIndex = 11;
+            this.lblEdit.Text = "Editorial";
             // 
             // cboEdit
             // 
@@ -180,84 +177,86 @@
             this.cboEdit.TabIndex = 12;
             this.cboEdit.Text = "Santillana";
             // 
-            // label7
+            // lblEstant
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(403, 108);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Estante";
+            this.lblEstant.AutoSize = true;
+            this.lblEstant.Location = new System.Drawing.Point(353, 99);
+            this.lblEstant.Name = "lblEstant";
+            this.lblEstant.Size = new System.Drawing.Size(43, 13);
+            this.lblEstant.TabIndex = 13;
+            this.lblEstant.Text = "Estante";
             // 
             // cboAutor
             // 
             this.cboAutor.FormattingEnabled = true;
-            this.cboAutor.Location = new System.Drawing.Point(527, 21);
+            this.cboAutor.Location = new System.Drawing.Point(477, 12);
             this.cboAutor.Name = "cboAutor";
             this.cboAutor.Size = new System.Drawing.Size(121, 21);
             this.cboAutor.TabIndex = 15;
             this.cboAutor.SelectedIndexChanged += new System.EventHandler(this.cboAutor_SelectedIndexChanged);
             // 
-            // label8
+            // lblAutor
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(403, 21);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 13);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Autor";
+            this.lblAutor.AutoSize = true;
+            this.lblAutor.Location = new System.Drawing.Point(353, 12);
+            this.lblAutor.Name = "lblAutor";
+            this.lblAutor.Size = new System.Drawing.Size(32, 13);
+            this.lblAutor.TabIndex = 16;
+            this.lblAutor.Text = "Autor";
             // 
             // cboCorriente
             // 
             this.cboCorriente.FormattingEnabled = true;
-            this.cboCorriente.Location = new System.Drawing.Point(527, 47);
+            this.cboCorriente.Location = new System.Drawing.Point(477, 38);
             this.cboCorriente.Name = "cboCorriente";
             this.cboCorriente.Size = new System.Drawing.Size(121, 21);
             this.cboCorriente.TabIndex = 17;
+            this.cboCorriente.SelectedIndexChanged += new System.EventHandler(this.cboCorriente_SelectedIndexChanged);
             // 
-            // label9
+            // lblCorriLite
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(403, 47);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 13);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Corriente Literaria";
+            this.lblCorriLite.AutoSize = true;
+            this.lblCorriLite.Location = new System.Drawing.Point(353, 38);
+            this.lblCorriLite.Name = "lblCorriLite";
+            this.lblCorriLite.Size = new System.Drawing.Size(89, 13);
+            this.lblCorriLite.TabIndex = 18;
+            this.lblCorriLite.Text = "Corriente Literaria";
             // 
-            // label10
+            // lblMat
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(403, 82);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 13);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Materia";
+            this.lblMat.AutoSize = true;
+            this.lblMat.Location = new System.Drawing.Point(353, 73);
+            this.lblMat.Name = "lblMat";
+            this.lblMat.Size = new System.Drawing.Size(42, 13);
+            this.lblMat.TabIndex = 19;
+            this.lblMat.Text = "Materia";
             // 
             // cboMat
             // 
             this.cboMat.FormattingEnabled = true;
-            this.cboMat.Location = new System.Drawing.Point(527, 74);
+            this.cboMat.Location = new System.Drawing.Point(477, 65);
             this.cboMat.Name = "cboMat";
             this.cboMat.Size = new System.Drawing.Size(121, 21);
             this.cboMat.TabIndex = 20;
+            this.cboMat.SelectedIndexChanged += new System.EventHandler(this.cboMat_SelectedIndexChanged);
             // 
-            // label11
+            // lblEjem
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(403, 166);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 13);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Ejemplares";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.lblEjem.AutoSize = true;
+            this.lblEjem.Location = new System.Drawing.Point(353, 157);
+            this.lblEjem.Name = "lblEjem";
+            this.lblEjem.Size = new System.Drawing.Size(58, 13);
+            this.lblEjem.TabIndex = 21;
+            this.lblEjem.Text = "Ejemplares";
+            this.lblEjem.Click += new System.EventHandler(this.label11_Click);
             // 
-            // numericUpDown2
+            // nudEjem
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(527, 164);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown2.TabIndex = 22;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.nudEjem.Location = new System.Drawing.Point(477, 155);
+            this.nudEjem.Name = "nudEjem";
+            this.nudEjem.Size = new System.Drawing.Size(120, 20);
+            this.nudEjem.TabIndex = 22;
+            this.nudEjem.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -273,26 +272,19 @@
             this.label12.TabIndex = 23;
             this.label12.Text = "INGRESO LIBRO";
             // 
-            // label13
+            // lblEntre
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(403, 135);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 13);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "Entrepaño";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(527, 138);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(121, 20);
-            this.textBox5.TabIndex = 26;
+            this.lblEntre.AutoSize = true;
+            this.lblEntre.Location = new System.Drawing.Point(353, 126);
+            this.lblEntre.Name = "lblEntre";
+            this.lblEntre.Size = new System.Drawing.Size(56, 13);
+            this.lblEntre.TabIndex = 24;
+            this.lblEntre.Text = "Entrepaño";
             // 
             // cboEstante
             // 
             this.cboEstante.FormattingEnabled = true;
-            this.cboEstante.Location = new System.Drawing.Point(526, 105);
+            this.cboEstante.Location = new System.Drawing.Point(476, 96);
             this.cboEstante.Name = "cboEstante";
             this.cboEstante.Size = new System.Drawing.Size(121, 21);
             this.cboEstante.TabIndex = 27;
@@ -304,42 +296,65 @@
             this.tabControl1.Location = new System.Drawing.Point(58, 81);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(720, 283);
+            this.tabControl1.Size = new System.Drawing.Size(779, 288);
             this.tabControl1.TabIndex = 29;
             // 
             // tabPage
             // 
-            this.tabPage.Controls.Add(this.textBox1);
+            this.tabPage.Controls.Add(this.cboApellido);
+            this.tabPage.Controls.Add(this.nudEdi);
+            this.tabPage.Controls.Add(this.cboEntre);
+            this.tabPage.Controls.Add(this.txtNomLib);
             this.tabPage.Controls.Add(this.cboEstante);
-            this.tabPage.Controls.Add(this.cbofecha);
-            this.tabPage.Controls.Add(this.textBox5);
-            this.tabPage.Controls.Add(this.label1);
-            this.tabPage.Controls.Add(this.label13);
-            this.tabPage.Controls.Add(this.textBox2);
-            this.tabPage.Controls.Add(this.label2);
-            this.tabPage.Controls.Add(this.numericUpDown2);
-            this.tabPage.Controls.Add(this.textBox3);
-            this.tabPage.Controls.Add(this.label11);
-            this.tabPage.Controls.Add(this.label3);
+            this.tabPage.Controls.Add(this.lblNomLib);
+            this.tabPage.Controls.Add(this.lblEntre);
+            this.tabPage.Controls.Add(this.txtLib);
+            this.tabPage.Controls.Add(this.lblTitulo);
+            this.tabPage.Controls.Add(this.nudEjem);
+            this.tabPage.Controls.Add(this.txtNoPag);
+            this.tabPage.Controls.Add(this.lblEjem);
+            this.tabPage.Controls.Add(this.lblNoPag);
             this.tabPage.Controls.Add(this.cboMat);
-            this.tabPage.Controls.Add(this.label4);
-            this.tabPage.Controls.Add(this.label10);
-            this.tabPage.Controls.Add(this.numericUpDown1);
-            this.tabPage.Controls.Add(this.label9);
-            this.tabPage.Controls.Add(this.label5);
+            this.tabPage.Controls.Add(this.lblVol);
+            this.tabPage.Controls.Add(this.lblMat);
+            this.tabPage.Controls.Add(this.nudVol);
+            this.tabPage.Controls.Add(this.lblCorriLite);
+            this.tabPage.Controls.Add(this.lblEdi);
             this.tabPage.Controls.Add(this.cboCorriente);
-            this.tabPage.Controls.Add(this.label6);
-            this.tabPage.Controls.Add(this.label8);
+            this.tabPage.Controls.Add(this.lblEdit);
+            this.tabPage.Controls.Add(this.lblAutor);
             this.tabPage.Controls.Add(this.cboEdit);
             this.tabPage.Controls.Add(this.cboAutor);
-            this.tabPage.Controls.Add(this.label7);
+            this.tabPage.Controls.Add(this.lblEstant);
+            this.tabPage.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabPage.Location = new System.Drawing.Point(4, 22);
             this.tabPage.Name = "tabPage";
             this.tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage.Size = new System.Drawing.Size(712, 257);
+            this.tabPage.Size = new System.Drawing.Size(771, 262);
             this.tabPage.TabIndex = 1;
             this.tabPage.Text = "Nuevo";
             this.tabPage.UseVisualStyleBackColor = true;
+            this.tabPage.Click += new System.EventHandler(this.tabPage_Click);
+            // 
+            // nudEdi
+            // 
+            this.nudEdi.Location = new System.Drawing.Point(117, 128);
+            this.nudEdi.Name = "nudEdi";
+            this.nudEdi.Size = new System.Drawing.Size(120, 20);
+            this.nudEdi.TabIndex = 29;
+            this.nudEdi.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // cboEntre
+            // 
+            this.cboEntre.FormattingEnabled = true;
+            this.cboEntre.Location = new System.Drawing.Point(477, 128);
+            this.cboEntre.Name = "cboEntre";
+            this.cboEntre.Size = new System.Drawing.Size(121, 21);
+            this.cboEntre.TabIndex = 28;
             // 
             // tabPage1
             // 
@@ -351,25 +366,58 @@
             this.tabPage1.Text = "Existente";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.BackgroundImage")));
+            this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnLimpiar.Location = new System.Drawing.Point(616, 439);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(44, 36);
+            this.btnLimpiar.TabIndex = 30;
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCerrar.BackgroundImage")));
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCerrar.Location = new System.Drawing.Point(566, 439);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(44, 36);
+            this.btnCerrar.TabIndex = 31;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // cboApellido
+            // 
+            this.cboApellido.FormattingEnabled = true;
+            this.cboApellido.Location = new System.Drawing.Point(625, 14);
+            this.cboApellido.Name = "cboApellido";
+            this.cboApellido.Size = new System.Drawing.Size(121, 21);
+            this.cboApellido.TabIndex = 30;
+            // 
             // wfIngresoLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.ClientSize = new System.Drawing.Size(996, 490);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIngreso);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "wfIngresoLibro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = " Ingreso Libro";
             this.Load += new System.EventHandler(this.wfIngresoLibro_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVol)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEjem)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage.ResumeLayout(false);
             this.tabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEdi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,35 +425,38 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox cbofecha;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtNomLib;
+        private System.Windows.Forms.Button btnIngreso;
+        private System.Windows.Forms.Label lblNomLib;
+        private System.Windows.Forms.TextBox txtLib;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.TextBox txtNoPag;
+        private System.Windows.Forms.Label lblNoPag;
+        private System.Windows.Forms.Label lblVol;
+        private System.Windows.Forms.NumericUpDown nudVol;
+        private System.Windows.Forms.Label lblEdi;
+        private System.Windows.Forms.Label lblEdit;
         private System.Windows.Forms.ComboBox cboEdit;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblEstant;
         private System.Windows.Forms.ComboBox cboAutor;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblAutor;
         private System.Windows.Forms.ComboBox cboCorriente;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblCorriLite;
+        private System.Windows.Forms.Label lblMat;
         private System.Windows.Forms.ComboBox cboMat;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label lblEjem;
+        private System.Windows.Forms.NumericUpDown nudEjem;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label lblEntre;
         private System.Windows.Forms.ComboBox cboEstante;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ComboBox cboEntre;
+        private System.Windows.Forms.NumericUpDown nudEdi;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.ComboBox cboApellido;
 
     }
 }

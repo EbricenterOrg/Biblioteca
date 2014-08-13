@@ -65,11 +65,11 @@ namespace Prototipo
             else
             {
 
-                conexion.ObtenerConexion();
+                csConexion.ObtenerConexion();
                 //MessageBox.Show("Conectado");
                 a = "";
 
-                MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_materia values ('{0}','{1}')", a, txtMat.Text), conexion.ObtenerConexion());
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_materia values ('{0}','{1}')", a, txtMat.Text), csConexion.ObtenerConexion());
 
                 giEnviar = comando.ExecuteNonQuery();
                 iBandera = 1;

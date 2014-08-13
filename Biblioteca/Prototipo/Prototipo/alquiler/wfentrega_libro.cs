@@ -26,13 +26,13 @@ namespace Prototipo.alquiler
         private void button1_Click(object sender, EventArgs e)
         {
             DataTable dtDatos = new DataTable();
-            int numero;
+           int numero;
             numero =  Convert.ToInt32(txtno.Text);
  
  // Se crea un MySqlAdapter para obtener los datos de la base
-            MySqlDataAdapter mdaDatos = new MySqlDataAdapter("Select * from tabt_detalquiler where iddetalle_detalquiler like('"+txtno.Text+"')", conexion.ObtenerConexion());
+            MySqlDataAdapter mdaDatos = new MySqlDataAdapter("Select * from tabt_detalquiler where iddetalle_detalquiler like('"+txtno.Text+"')", csConexion.ObtenerConexion());
  string quer = "Select * from tabt_detalquiler where iddetalle_detalquiler='"+txtno.Text+"' ";
- MySqlCommand comando = new MySqlCommand(quer, conexion.ObtenerConexion());
+ MySqlCommand comando = new MySqlCommand(quer, csConexion.ObtenerConexion());
  MySqlDataReader leer = comando.ExecuteReader();
  // Con la información del adaptador se rellena el DataTable
  mdaDatos.Fill(dtDatos);

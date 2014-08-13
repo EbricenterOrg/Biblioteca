@@ -40,7 +40,7 @@
             this.lblCiudad = new System.Windows.Forms.Label();
             this.txtCiudad = new System.Windows.Forms.TextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -138,22 +138,22 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnSalir
+            // btnCerrar
             // 
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(182, 299);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(44, 36);
-            this.btnSalir.TabIndex = 16;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.button2_Click);
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(182, 299);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(44, 36);
+            this.btnCerrar.TabIndex = 16;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.button2_Click);
             // 
             // wfEditorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 357);
-            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtCiudad);
             this.Controls.Add(this.lblCiudad);
@@ -188,6 +188,6 @@
         private System.Windows.Forms.Label lblCiudad;
         private System.Windows.Forms.TextBox txtCiudad;
         private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }

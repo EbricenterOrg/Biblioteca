@@ -34,9 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,13 +50,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="alquiler\wfAlquiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alquiler\wfAlquiler.Designer.cs">
+      <DependentUpon>wfAlquiler.cs</DependentUpon>
+    </Compile>
     <Compile Include="alquiler\wfentrega_libro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="alquiler\wfentrega_libro.Designer.cs">
       <DependentUpon>wfentrega_libro.cs</DependentUpon>
     </Compile>
-    <Compile Include="conexion.cs" />
+    <Compile Include="CLogin\csCLogin.cs" />
+    <Compile Include="CLogin\csCLoginCo.cs" />
+    <Compile Include="csConexion.cs" />
+    <Compile Include="DataSetusuarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetusuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CPersonas\csPersona.cs" />
+    <Compile Include="CPersonas\csPersonaCo.cs" />
+    <Compile Include="CPersonas\wfCPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPersonas\wfCPersonas.designer.cs">
+      <DependentUpon>wfCPersonas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Libros\Autor.cs" />
     <Compile Include="Libros\AutorDTO.cs" />
     <Compile Include="Libros\wfAutor.cs">
@@ -62,11 +86,23 @@
     <Compile Include="Libros\wfAutor.Designer.cs">
       <DependentUpon>wfAutor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Libros\wfBusquedaLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libros\wfBusquedaLibro.designer.cs">
+      <DependentUpon>wfBusquedaLibro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Libros\wfCorrienteLiteraria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Libros\wfCorrienteLiteraria.Designer.cs">
       <DependentUpon>wfCorrienteLiteraria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libros\wfEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libros\wfEditar.designer.cs">
+      <DependentUpon>wfEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="Libros\wfEditorial.cs">
       <SubType>Form</SubType>
@@ -86,48 +122,64 @@
     <Compile Include="Libros\wfMateria.Designer.cs">
       <DependentUpon>wfMateria.cs</DependentUpon>
     </Compile>
-    <Compile Include="Principal\wfIniciarSesion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Principal\wfIniciarSesion.designer.cs">
-      <DependentUpon>wfIniciarSesion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Principal\wfMenuAdministrador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Principal\wfMenuAdministrador.Designer.cs">
-      <DependentUpon>wfMenuAdministrador.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Principal\wfAcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Principal\wfAcercaDe.designer.cs">
       <DependentUpon>wfAcercaDe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Principal\wfMenuPrincipal.cs">
+    <Compile Include="Principal\wfIniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Principal\wfMenuPrincipal.designer.cs">
-      <DependentUpon>wfMenuPrincipal.cs</DependentUpon>
+    <Compile Include="Principal\wfIniciarSesion.designer.cs">
+      <DependentUpon>wfIniciarSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios\Persona.cs" />
-    <Compile Include="Usuarios\PersonaCo.cs" />
-    <Compile Include="Usuarios\wfIngresoPersonas.cs">
+    <Compile Include="Principal\wfMenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios\wfIngresoPersonas.designer.cs">
-      <DependentUpon>wfIngresoPersonas.cs</DependentUpon>
+    <Compile Include="Principal\wfMenuAdmin.Designer.cs">
+      <DependentUpon>wfMenuAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Principal\wfMenuBibliotecario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\wfMenuBibliotecario.designer.cs">
+      <DependentUpon>wfMenuBibliotecario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CLogin\wfCLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLogin\wfCLogin.Designer.cs">
+      <DependentUpon>wfCLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPersonas\wfBuscarPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPersonas\wfBuscarPersona.Designer.cs">
+      <DependentUpon>wfBuscarPersona.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="alquiler\wfAlquiler.resx">
+      <DependentUpon>wfAlquiler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="alquiler\wfentrega_libro.resx">
       <DependentUpon>wfentrega_libro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPersonas\wfCPersonas.resx">
+      <DependentUpon>wfCPersonas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Libros\wfAutor.resx">
       <DependentUpon>wfAutor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Libros\wfBusquedaLibro.resx">
+      <DependentUpon>wfBusquedaLibro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Libros\wfCorrienteLiteraria.resx">
       <DependentUpon>wfCorrienteLiteraria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libros\wfEditar.resx">
+      <DependentUpon>wfEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Libros\wfEditorial.resx">
       <DependentUpon>wfEditorial.cs</DependentUpon>
@@ -138,11 +190,17 @@
     <EmbeddedResource Include="Libros\wfMateria.resx">
       <DependentUpon>wfMateria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Principal\wfAcercaDe.resx">
+      <DependentUpon>wfAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal\wfIniciarSesion.resx">
       <DependentUpon>wfIniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Principal\wfMenuAdministrador.resx">
-      <DependentUpon>wfMenuAdministrador.cs</DependentUpon>
+    <EmbeddedResource Include="Principal\wfMenuAdmin.resx">
+      <DependentUpon>wfMenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\wfMenuBibliotecario.resx">
+      <DependentUpon>wfMenuBibliotecario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -154,15 +212,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Principal\wfAcercaDe.resx">
-      <DependentUpon>wfAcercaDe.cs</DependentUpon>
+    <EmbeddedResource Include="CLogin\wfCLogin.resx">
+      <DependentUpon>wfCLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Principal\wfMenuPrincipal.resx">
-      <DependentUpon>wfMenuPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="CPersonas\wfBuscarPersona.resx">
+      <DependentUpon>wfBuscarPersona.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuarios\wfIngresoPersonas.resx">
-      <DependentUpon>wfIngresoPersonas.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="DataSetusuarios.xsc">
+      <DependentUpon>DataSetusuarios.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetusuarios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetusuarios.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetusuarios.xss">
+      <DependentUpon>DataSetusuarios.xsd</DependentUpon>
+    </None>
     <None Include="iconos\Thumbs.db" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

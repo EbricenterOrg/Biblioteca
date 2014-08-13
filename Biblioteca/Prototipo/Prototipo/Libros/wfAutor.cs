@@ -78,14 +78,14 @@ namespace Prototipo
            {
                
                //Manda a llamar a la clase conexion
-               conexion.ObtenerConexion();
+               csConexion.ObtenerConexion();
                //MessageBox.Show("Conectado");
                a = "";
                iBandera = 1;
 
 
                //Realiza la Insercion en la Tabla AUTOR
-               MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_autor values ('{0}','{1}','{2}')", a, txtNomAutor.Text, txtApeAutor.Text), conexion.ObtenerConexion());
+               MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_autor values ('{0}','{1}','{2}')", a, txtNomAutor.Text, txtApeAutor.Text), csConexion.ObtenerConexion());
 
                gienviar = comando.ExecuteNonQuery();
 
@@ -97,6 +97,7 @@ namespace Prototipo
            {
                MessageBox.Show("Autor Guardado Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                LimpiarTextBox(this);
+               txtNomAutor.Focus();
            }
            else
            {

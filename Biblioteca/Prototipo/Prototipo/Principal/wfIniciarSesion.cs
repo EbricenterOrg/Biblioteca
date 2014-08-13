@@ -44,7 +44,7 @@ namespace Prototipo
                         wfIniciarSesion formu2 = new wfIniciarSesion();
                         formu2.Close();
                         MessageBox.Show("Bienvenido");
-                        wfMenuAdministrador form = new wfMenuAdministrador();
+                        wfMenuBibliotecario form = new wfMenuBibliotecario();
                         form.Show();
                                                    
                     }
@@ -63,7 +63,7 @@ namespace Prototipo
 
         private void btnconexion_Click(object sender, EventArgs e)
         {
-            conexion.ObtenerConexion();
+            csConexion.ObtenerConexion();
             MessageBox.Show("conectado");
         }
 

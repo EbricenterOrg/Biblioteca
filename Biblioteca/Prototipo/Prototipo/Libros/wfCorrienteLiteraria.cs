@@ -60,6 +60,7 @@ namespace Prototipo
             InitializeComponent();
         }
 
+
         private void btnIgresarCorriente_Click(object sender, EventArgs e)
         {
             string a;
@@ -74,11 +75,11 @@ namespace Prototipo
             else
             {
                
-                conexion.ObtenerConexion();
+                csConexion.ObtenerConexion();
                 //MessageBox.Show("Conectado");
                 a = "";
 
-                MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_corriente values ('{0}','{1}')", a, txtNomCorriente.Text), conexion.ObtenerConexion());
+                MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_corriente values ('{0}','{1}')", a, txtNomCorriente.Text), csConexion.ObtenerConexion());
 
                 giEnviar = comando.ExecuteNonQuery();
                 iBandera = 1;
@@ -88,6 +89,7 @@ namespace Prototipo
             {
                 MessageBox.Show("Autor Guardado Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimpiarTextBox(this);
+                txtNomCorriente.Focus();
             }
             else
             {
