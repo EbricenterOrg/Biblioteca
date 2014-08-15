@@ -14,8 +14,10 @@ namespace Prototipo
     public partial class wfIngresoLibro : Form
     {
        // int giEnviar;
-
-
+        public string sidMateria;
+        public string valor;
+        public int bandera = 0;
+        string idCo;
         public wfIngresoLibro()
         {
             InitializeComponent();
@@ -28,7 +30,7 @@ namespace Prototipo
             llenar_autores_combo();
             llenar_corriente_literaria();
             llenar_Estante_combo();
-            llenar_entre_combo();
+            
             llenar_editorial_combo();
         }
 
@@ -46,50 +48,48 @@ namespace Prototipo
         private void button1_Click(object sender, EventArgs e)
         {
 
+
+            DateTime fechahoy1 = DateTime.Now;
             int gienviar;
+            string a = "";
             csConexion.ObtenerConexion();
             //MessageBox.Show("Conectado");
 
            //******************************SI FUNCIONA
-            string sidMateria = ((System.Data.DataRowView)cboMat.SelectedItem).Row.ItemArray[0].ToString();
-            string sidubicacion = ((System.Data.DataRowView)cboEstante.SelectedItem).Row.ItemArray[0].ToString(); 
+
+            if (valor == "Educativo")
+            {
+                sidMateria = ((System.Data.DataRowView)cboMat.SelectedItem).Row.ItemArray[0].ToString();
+                MessageBox.Show(sidMateria + " MATERIA");
+            }
+            else
+            {
+                sidMateria = "";
+                MessageBox.Show(sidMateria + " NO MATERIA");
+            }
+           
+            string sidubicacion = ((System.Data.DataRowView)cboEstante.SelectedItem).Row.ItemArray[0].ToString();
+            string siddautor = ((System.Data.DataRowView)cboAutor.SelectedItem).Row.ItemArray[0].ToString();
+            string sidCorriente = ((System.Data.DataRowView)cboCorriente.SelectedItem).Row.ItemArray[0].ToString();
+            string sidEditorial = ((System.Data.DataRowView)cboEdit.SelectedItem).Row.ItemArray[0].ToString(); 
             DataSet ds = new DataSet();
 
-            //MySqlCommand comando = new MySqlCommand(string.Format("Insert into carol values ('{0}')", sidMateria), csConexion.ObtenerConexion());
-
+            MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_libro values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')", a, txtNomLib.Text, txtLib.Text, nudpag.Value, nudVol.Value, fechahoy1, nudEdi.Value, "1", nudEjem.Value, sidubicacion, siddautor, sidEditorial, sidCorriente, sidMateria), csConexion.ObtenerConexion());
+            //MySqlCommand comando = new MySqlCommand(string.Format("Insert into carol values ('{0}','{1}','{2}','{3}','{4}','{5}')", siddautor, sidMateria, sidCorriente,  sidubicacion, fechahoy1, "1" ), csConexion.ObtenerConexion());
 //*************************************************************************************************************************
 
 
+           gienviar = comando.ExecuteNonQuery();
 
-            MySqlConnection conexion1 = new MySqlConnection();
-            conexion1 = csConexion.ObtenerConexion();
-
-            DataTable dtDatos = new DataTable();
-
-            //indicamos la consulta en SQL
-            MySqlDataAdapter da = new MySqlDataAdapter("select id_autor from tab_autor where nombre_autor ='"+cboAutor.Text+"' and apellido_autor ='"+cboApellido+"'", conexion1);
-            string quer = "select id_autor from tab_autor where nombre_autor ='" + cboAutor.Text + "' and apellido_autor ='" + cboApellido + "'";
-
-            MySqlCommand comando = new MySqlCommand(quer, csConexion.ObtenerConexion());
-            MySqlDataReader leer = comando.ExecuteReader();
-            // Con la información del adaptador se rellena el DataTable
-            da.Fill(dtDatos);
-            leer.Read();
+           
+            //MessageBox.Show(sidMateria + "MAteria");
+            MessageBox.Show(sidubicacion + "ubicacion");
+            MessageBox.Show(siddautor+ "autor");
+            MessageBox.Show(sidCorriente + "corriente");
+            MessageBox.Show(sidEditorial + "Editorial");
+           // MessageBox.Show(nudVol.Value + "Volumen");
             
-            //string id = leer["id_autor"].ToString();
-
-            //int id2 = Convert.ToInt32(id);
-
-            //int id2 = leer.GetInt32(leer.GetOrdinal("id_autor")); 
-
-            MessageBox.Show(leer["id_autor"].ToString());
-
-            MySqlCommand comando1 = new MySqlCommand(string.Format("Insert into carol values ('{0}')", leer["id_autor"].ToString()), csConexion.ObtenerConexion());
-
-            gienviar = comando1.ExecuteNonQuery();
-
-            //MessageBox.Show(sidMateria);
-            //MessageBox.Show(sidubicacion);
+           
            
 
             
@@ -111,36 +111,25 @@ namespace Prototipo
 
         public void llenar_autores_combo()
         {
-            //se declara una variable de tipo SqlConnection
-
+          
             try
             {
-                MySqlConnection conexion1 = new MySqlConnection();
-                conexion1 = csConexion.ObtenerConexion(); 
 
-                DataSet ds = new DataSet();
-
-                //indicamos la consulta en SQL
-                MySqlDataAdapter da = new MySqlDataAdapter("Select nombre_autor, apellido_autor from tab_autor", conexion1);
+                string query = "SELECT  id_autor, (CONCAT(nombre_autor, '   ', apellido_autor)) AS autor FROM tab_autor";
 
 
-                //se indica el nombre de la tabla
-                da.Fill(ds, "nombre_autor:");
-                da.Fill(ds, "apellido_autor");
-                cboAutor.DataSource = ds.Tables[0].DefaultView;
-                cboApellido.DataSource = ds.Tables[1].DefaultView;
-               
-
-                //se especifica el campo de la tabla
-                cboAutor.ValueMember = "nombre_autor";
-                cboApellido.ValueMember = "apellido_autor";
-                
-
-                conexion1.Close();
+                MySqlCommand cmd = new MySqlCommand(query, csConexion.ObtenerConexion());
+                MySqlDataAdapter da1 = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da1.Fill(dt);
+                //cboAutor.ValueMember = "";
+                cboAutor.DisplayMember = "autor";
+                cboAutor.DataSource = dt;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Error en Autor");
+        
             }
         }
 
@@ -153,23 +142,14 @@ namespace Prototipo
 
             try
             {
-                MySqlConnection conexioncorri = new MySqlConnection();
-                conexioncorri = csConexion.ObtenerConexion();
-
-                DataSet ds = new DataSet();
-
-                //indicamos la consulta en SQL
-                MySqlDataAdapter da = new MySqlDataAdapter("Select cliteraria_corriente from tab_corriente", conexioncorri);
-
-                //se indica el nombre de la tabla
-                da.Fill(ds, "Corriente_Literaria:");
-                cboCorriente.DataSource = ds.Tables[0].DefaultView;
-
-
-                //se especifica el campo de la tabla
-                cboCorriente.ValueMember = "cliteraria_corriente";
-
-                conexioncorri.Close();
+                string query = "select idliteraria_corriente,cliteraria_corriente from tab_corriente";
+                MySqlCommand cmd = new MySqlCommand(query, csConexion.ObtenerConexion());
+                MySqlDataAdapter da1 = new MySqlDataAdapter(cmd); 
+                DataTable dt = new DataTable();
+                da1.Fill(dt);
+                cboCorriente.ValueMember = "idliteraria_corriente";
+                cboCorriente.DisplayMember = "cliteraria_corriente";
+                cboCorriente.DataSource = dt;
 
             }
             catch (Exception ex)
@@ -178,7 +158,7 @@ namespace Prototipo
             }
         }
 
-
+        
 
         public void llenar_materia_combo()
         {
@@ -193,7 +173,7 @@ namespace Prototipo
                 DataSet ds = new DataSet();
 
                 //indicamos la consulta en SQL
-                MySqlDataAdapter da = new MySqlDataAdapter("Select idmateria_materia, nombre_materia from tab_materia", conexion1);
+                MySqlDataAdapter da = new MySqlDataAdapter("select  idmateria_materia, nombre_materia from tab_materia where idmateria_materia >=1", conexion1);
 
                 //se indica el nombre de la tabla
                
@@ -218,7 +198,7 @@ namespace Prototipo
             }
         }
        
-
+        
 
         public void llenar_Estante_combo()
         {
@@ -226,26 +206,16 @@ namespace Prototipo
 
             try
             {
-                MySqlConnection conexion1 = new MySqlConnection();
-                conexion1 = csConexion.ObtenerConexion();
-
-                DataSet ds = new DataSet();
-
-                //indicamos la consulta en SQL
-                MySqlDataAdapter da = new MySqlDataAdapter("Select id_ubicacion, noestante_ubicacion from tab_ubicacion", conexion1);
-
-                //se indica el nombre de la tabla
-               
-                da.Fill(ds, "Estante:");
-
-                cboEstante.DataSource = ds.Tables[0].DefaultView;
+                string query = "SELECT  id_ubicacion, (CONCAT(noestante_ubicacion, ' - ', noentrepa_ubicacion)) AS ubicacion FROM tab_ubicacion";
 
 
-                //se especifica el campo de la tabla
-                cboEstante.ValueMember = "id_ubicacion";
-                cboEstante.DisplayMember = "noestante_ubicacion";
-
-                conexion1.Close();
+                MySqlCommand cmd = new MySqlCommand(query, csConexion.ObtenerConexion());
+                MySqlDataAdapter da1 = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da1.Fill(dt);
+                //cboAutor.ValueMember = "";
+                cboEstante.DisplayMember = "ubicacion";
+                cboEstante.DataSource = dt;
             }
             catch (Exception ex)
             {
@@ -255,36 +225,6 @@ namespace Prototipo
 
 
 
-
-        public void llenar_entre_combo()
-        {
-            //se declara una variable de tipo SqlConnection
-
-            try
-            {
-                MySqlConnection conexion1 = new MySqlConnection();
-                conexion1 = csConexion.ObtenerConexion();
-
-                DataSet ds = new DataSet();
-
-                //indicamos la consulta en SQL
-                MySqlDataAdapter da = new MySqlDataAdapter("Select noentrepa_ubicacion from tab_ubicacion", conexion1);
-
-                //se indica el nombre de la tabla
-                da.Fill(ds, "noentrepa_ubicacion");
-                cboEntre.DataSource = ds.Tables[0].DefaultView;
-
-
-                //se especifica el campo de la tabla
-                cboEntre.ValueMember = "noentrepa_ubicacion";
-
-                conexion1.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error");
-            }
-        }
 
 
 
@@ -294,23 +234,14 @@ namespace Prototipo
 
             try
             {
-                MySqlConnection conexion1 = new MySqlConnection();
-                conexion1 = csConexion.ObtenerConexion();
-
-                DataSet ds = new DataSet();
-
-                //indicamos la consulta en SQL
-                MySqlDataAdapter da = new MySqlDataAdapter("Select nombre_edit from tab_editorial", conexion1);
-
-                //se indica el nombre de la tabla
-                da.Fill(ds, "nombre_editorial:");
-                cboEdit.DataSource = ds.Tables[0].DefaultView;
-
-
-                //se especifica el campo de la tabla
-                cboEdit.ValueMember = "nombre_edit";
-
-                conexion1.Close();
+                string query = "Select id_edit, nombre_edit from tab_editorial";
+                MySqlCommand cmd = new MySqlCommand(query, csConexion.ObtenerConexion());
+                MySqlDataAdapter da1 = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da1.Fill(dt);
+                cboEdit.ValueMember = "id_edit";
+                cboEdit.DisplayMember = "nombre_edit";
+                cboEdit.DataSource = dt;
             }
             catch (Exception ex)
             {
@@ -335,31 +266,71 @@ namespace Prototipo
 
         private void cboCorriente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string valor = ((System.Data.DataRowView)cboCorriente.SelectedItem).Row.ItemArray[0].ToString();
+            
+            valor = ((System.Data.DataRowView)cboCorriente.SelectedItem).Row.ItemArray[1].ToString();
+
             if (valor == "Educativo")
             {
                 lblMat.Visible = true;
                 cboMat.Visible = true;
                 llenar_materia_combo();
+                
+                //valor = "";
+
+                //valor = ((System.Data.DataRowView)cboCorriente.SelectedItem).Row.ItemArray[0].ToString();
+
             }
+
+
+
             else
             {
-                lblMat.Visible = false;
-                cboMat.Visible = false;
+                
+               
+                    sidMateria = "";
+                    sidMateria = null;
+                    lblMat.Visible = false;
+                    cboMat.Visible = false;
+                    bandera = 1;
+                    
+                
+
+
+
+
+
+
             }
+
+            
+            sidMateria = "";
 
 
         }
 
         private void cboMat_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void tabPage_Click(object sender, EventArgs e)
         {
 
         }
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
 
 
 

@@ -51,21 +51,20 @@
             this.lblEjem = new System.Windows.Forms.Label();
             this.nudEjem = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
-            this.lblEntre = new System.Windows.Forms.Label();
             this.cboEstante = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage = new System.Windows.Forms.TabPage();
-            this.cboApellido = new System.Windows.Forms.ComboBox();
             this.nudEdi = new System.Windows.Forms.NumericUpDown();
-            this.cboEntre = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.nudpag = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.nudVol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEjem)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudEdi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudpag)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNomLib
@@ -114,7 +113,7 @@
             // 
             // txtNoPag
             // 
-            this.txtNoPag.Location = new System.Drawing.Point(117, 66);
+            this.txtNoPag.Location = new System.Drawing.Point(117, 198);
             this.txtNoPag.Name = "txtNoPag";
             this.txtNoPag.Size = new System.Drawing.Size(100, 20);
             this.txtNoPag.TabIndex = 6;
@@ -140,6 +139,16 @@
             // nudVol
             // 
             this.nudVol.Location = new System.Drawing.Point(117, 92);
+            this.nudVol.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.nudVol.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudVol.Name = "nudVol";
             this.nudVol.Size = new System.Drawing.Size(120, 20);
             this.nudVol.TabIndex = 9;
@@ -170,24 +179,25 @@
             // 
             // cboEdit
             // 
+            this.cboEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEdit.FormattingEnabled = true;
             this.cboEdit.Location = new System.Drawing.Point(117, 158);
             this.cboEdit.Name = "cboEdit";
             this.cboEdit.Size = new System.Drawing.Size(121, 21);
             this.cboEdit.TabIndex = 12;
-            this.cboEdit.Text = "Santillana";
             // 
             // lblEstant
             // 
             this.lblEstant.AutoSize = true;
-            this.lblEstant.Location = new System.Drawing.Point(353, 99);
+            this.lblEstant.Location = new System.Drawing.Point(353, 108);
             this.lblEstant.Name = "lblEstant";
-            this.lblEstant.Size = new System.Drawing.Size(43, 13);
+            this.lblEstant.Size = new System.Drawing.Size(101, 13);
             this.lblEstant.TabIndex = 13;
-            this.lblEstant.Text = "Estante";
+            this.lblEstant.Text = "Estante - Entrepaño";
             // 
             // cboAutor
             // 
+            this.cboAutor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboAutor.FormattingEnabled = true;
             this.cboAutor.Location = new System.Drawing.Point(477, 12);
             this.cboAutor.Name = "cboAutor";
@@ -206,6 +216,7 @@
             // 
             // cboCorriente
             // 
+            this.cboCorriente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCorriente.FormattingEnabled = true;
             this.cboCorriente.Location = new System.Drawing.Point(477, 38);
             this.cboCorriente.Name = "cboCorriente";
@@ -233,6 +244,7 @@
             // 
             // cboMat
             // 
+            this.cboMat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMat.FormattingEnabled = true;
             this.cboMat.Location = new System.Drawing.Point(477, 65);
             this.cboMat.Name = "cboMat";
@@ -253,6 +265,16 @@
             // nudEjem
             // 
             this.nudEjem.Location = new System.Drawing.Point(477, 155);
+            this.nudEjem.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.nudEjem.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudEjem.Name = "nudEjem";
             this.nudEjem.Size = new System.Drawing.Size(120, 20);
             this.nudEjem.TabIndex = 22;
@@ -272,19 +294,11 @@
             this.label12.TabIndex = 23;
             this.label12.Text = "INGRESO LIBRO";
             // 
-            // lblEntre
-            // 
-            this.lblEntre.AutoSize = true;
-            this.lblEntre.Location = new System.Drawing.Point(353, 126);
-            this.lblEntre.Name = "lblEntre";
-            this.lblEntre.Size = new System.Drawing.Size(56, 13);
-            this.lblEntre.TabIndex = 24;
-            this.lblEntre.Text = "Entrepaño";
-            // 
             // cboEstante
             // 
+            this.cboEstante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEstante.FormattingEnabled = true;
-            this.cboEstante.Location = new System.Drawing.Point(476, 96);
+            this.cboEstante.Location = new System.Drawing.Point(477, 108);
             this.cboEstante.Name = "cboEstante";
             this.cboEstante.Size = new System.Drawing.Size(121, 21);
             this.cboEstante.TabIndex = 27;
@@ -301,13 +315,11 @@
             // 
             // tabPage
             // 
-            this.tabPage.Controls.Add(this.cboApellido);
+            this.tabPage.Controls.Add(this.nudpag);
             this.tabPage.Controls.Add(this.nudEdi);
-            this.tabPage.Controls.Add(this.cboEntre);
             this.tabPage.Controls.Add(this.txtNomLib);
             this.tabPage.Controls.Add(this.cboEstante);
             this.tabPage.Controls.Add(this.lblNomLib);
-            this.tabPage.Controls.Add(this.lblEntre);
             this.tabPage.Controls.Add(this.txtLib);
             this.tabPage.Controls.Add(this.lblTitulo);
             this.tabPage.Controls.Add(this.nudEjem);
@@ -336,17 +348,19 @@
             this.tabPage.UseVisualStyleBackColor = true;
             this.tabPage.Click += new System.EventHandler(this.tabPage_Click);
             // 
-            // cboApellido
-            // 
-            this.cboApellido.FormattingEnabled = true;
-            this.cboApellido.Location = new System.Drawing.Point(625, 14);
-            this.cboApellido.Name = "cboApellido";
-            this.cboApellido.Size = new System.Drawing.Size(121, 21);
-            this.cboApellido.TabIndex = 30;
-            // 
             // nudEdi
             // 
             this.nudEdi.Location = new System.Drawing.Point(117, 128);
+            this.nudEdi.Maximum = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+            this.nudEdi.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudEdi.Name = "nudEdi";
             this.nudEdi.Size = new System.Drawing.Size(120, 20);
             this.nudEdi.TabIndex = 29;
@@ -355,14 +369,6 @@
             0,
             0,
             0});
-            // 
-            // cboEntre
-            // 
-            this.cboEntre.FormattingEnabled = true;
-            this.cboEntre.Location = new System.Drawing.Point(477, 128);
-            this.cboEntre.Name = "cboEntre";
-            this.cboEntre.Size = new System.Drawing.Size(121, 21);
-            this.cboEntre.TabIndex = 28;
             // 
             // tabPage1
             // 
@@ -396,6 +402,28 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // nudpag
+            // 
+            this.nudpag.Location = new System.Drawing.Point(117, 66);
+            this.nudpag.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
+            this.nudpag.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.nudpag.Name = "nudpag";
+            this.nudpag.Size = new System.Drawing.Size(120, 20);
+            this.nudpag.TabIndex = 30;
+            this.nudpag.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
             // wfIngresoLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -418,6 +446,7 @@
             this.tabPage.ResumeLayout(false);
             this.tabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudEdi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudpag)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,16 +476,14 @@
         private System.Windows.Forms.Label lblEjem;
         private System.Windows.Forms.NumericUpDown nudEjem;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label lblEntre;
         private System.Windows.Forms.ComboBox cboEstante;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ComboBox cboEntre;
         private System.Windows.Forms.NumericUpDown nudEdi;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.ComboBox cboApellido;
+        private System.Windows.Forms.NumericUpDown nudpag;
 
     }
 }
