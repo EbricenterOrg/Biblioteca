@@ -48,6 +48,7 @@
             this.ingresoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,7 +56,6 @@
             this.manualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tecnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,7 +134,7 @@
             // 
             this.ingreasrToolStripMenuItem.Image = global::Prototipo.Properties.Resources.Add;
             this.ingreasrToolStripMenuItem.Name = "ingreasrToolStripMenuItem";
-            this.ingreasrToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ingreasrToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.ingreasrToolStripMenuItem.Text = "Ingresar";
             this.ingreasrToolStripMenuItem.Click += new System.EventHandler(this.ingreasrToolStripMenuItem_Click);
             // 
@@ -142,7 +142,7 @@
             // 
             this.editarToolStripMenuItem.Image = global::Prototipo.Properties.Resources.Modify;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
@@ -150,14 +150,14 @@
             // 
             this.eliminarToolStripMenuItem.Image = global::Prototipo.Properties.Resources.Delete;
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
             // buscarToolStripMenuItem1
             // 
             this.buscarToolStripMenuItem1.Image = global::Prototipo.Properties.Resources.Search;
             this.buscarToolStripMenuItem1.Name = "buscarToolStripMenuItem1";
-            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
             this.buscarToolStripMenuItem1.Text = "Buscar";
             this.buscarToolStripMenuItem1.Click += new System.EventHandler(this.buscarToolStripMenuItem1_Click);
             // 
@@ -191,6 +191,7 @@
             this.editorialToolStripMenuItem.Name = "editorialToolStripMenuItem";
             this.editorialToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.editorialToolStripMenuItem.Text = "Editorial";
+            this.editorialToolStripMenuItem.Click += new System.EventHandler(this.editorialToolStripMenuItem_Click);
             // 
             // materiaToolStripMenuItem
             // 
@@ -228,7 +229,7 @@
             // 
             this.ingresoToolStripMenuItem.Image = global::Prototipo.Properties.Resources.Add;
             this.ingresoToolStripMenuItem.Name = "ingresoToolStripMenuItem";
-            this.ingresoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ingresoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.ingresoToolStripMenuItem.Text = "Ingreso";
             this.ingresoToolStripMenuItem.Click += new System.EventHandler(this.ingresoToolStripMenuItem_Click);
             // 
@@ -236,15 +237,22 @@
             // 
             this.editarToolStripMenuItem1.Image = global::Prototipo.Properties.Resources.Modify;
             this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
             this.editarToolStripMenuItem1.Text = "Editar";
             // 
             // eliminarToolStripMenuItem1
             // 
             this.eliminarToolStripMenuItem1.Image = global::Prototipo.Properties.Resources.Delete;
             this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
-            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
             this.eliminarToolStripMenuItem1.Text = "Eliminar";
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.loginToolStripMenuItem.Text = "Login";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // reporteToolStripMenuItem
             // 
@@ -306,13 +314,6 @@
             this.tecnicoToolStripMenuItem.Name = "tecnicoToolStripMenuItem";
             this.tecnicoToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.tecnicoToolStripMenuItem.Text = "Tecnico";
-            // 
-            // loginToolStripMenuItem
-            // 
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.loginToolStripMenuItem.Text = "Login";
-            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // wfMenuAdmin
             // 

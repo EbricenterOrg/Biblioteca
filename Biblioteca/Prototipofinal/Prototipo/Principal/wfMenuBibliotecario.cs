@@ -45,8 +45,7 @@ namespace Prototipo {
         private void btnNu_Click(object sender, EventArgs e)
         {
             wfIngresoLibro ingreso = new wfIngresoLibro();
-            ingreso.MdiParent = this;
-            ingreso.Show();
+            ingreso.ShowDialog();
         }
 
         private void btnGu_Click(object sender, EventArgs e)
@@ -69,8 +68,8 @@ namespace Prototipo {
         private void btnCAutor_Click(object sender, EventArgs e)
         {
             wfAutor cautor = new wfAutor();
-            cautor.MdiParent = this;
-            cautor.Show();
+            cautor.ShowDialog();
+            
         }
 
         private void editorialToolStripMenuItem_Click(object sender, EventArgs e)
@@ -121,22 +120,20 @@ namespace Prototipo {
         private void editorialToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             wfEditorial cedit = new wfEditorial();
-            cedit.MdiParent = this;
-            cedit.Show();
+            cedit.ShowDialog();
+
         }
 
         private void materiaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             wfMateria mat = new wfMateria();
-            mat.MdiParent = this;
-            mat.Show();
+            mat.ShowDialog();
         }
 
         private void corrienteLiterariaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             wfCorrienteLiteraria mat = new wfCorrienteLiteraria();
-            mat.MdiParent = this;
-            mat.Show();
+            mat.ShowDialog();
         }
 
         private void tecnicoToolStripMenuItem_Click(object sender, EventArgs e)

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*Autor: "Carol Flores"
+ *Fecha: "08/Agosto/2014"
+ *Comentario: "Este modulo realizara el ingreso de la corriente literaria"
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,7 +82,7 @@ namespace Prototipo
             {
                
                 csConexion.ObtenerConexion();
-                //MessageBox.Show("Conectado");
+                
                 a = "";
 
                 MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_corriente values ('{0}','{1}')", a, txtNomCorriente.Text), csConexion.ObtenerConexion());
@@ -87,13 +93,13 @@ namespace Prototipo
 
             if (iBandera == 1)
             {
-                MessageBox.Show("Autor Guardado Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Corriente Literaria Guardada Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimpiarTextBox(this);
-                txtNomCorriente.Focus();
+                Desabilitar();
             }
             else
             {
-                MessageBox.Show("No se pudo guardar el autor", "Fallo!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("No se pudo guardar la corriente literaria", "Fallo!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
 
@@ -111,5 +117,39 @@ namespace Prototipo
         {
             this.Close();
         }
+
+        private void wfCorrienteLiteraria_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        public void Habilitar()
+        {
+            txtNomCorriente.Enabled = true;
+            btnIgreCorriente.Enabled = true;
+            btnLimpiar.Enabled = true;
+        }
+
+        public void Desabilitar()
+        {
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Habilitar();
+           
+        }
+
+        private void txtNomCorriente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se acepta el ingreso de letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
     }
 }

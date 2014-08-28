@@ -43,30 +43,26 @@ namespace Prototipo.Principal
 
         private void autorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            wfEditorial cedit = new wfEditorial();
-            cedit.MdiParent = this;
-            cedit.Show();
+            wfAutor cautor = new wfAutor();
+            cautor.ShowDialog();
         }
 
         private void ingreasrToolStripMenuItem_Click(object sender, EventArgs e)
         {
             wfIngresoLibro ingreso = new wfIngresoLibro();
-            ingreso.MdiParent = this;
-            ingreso.Show();
+            ingreso.ShowDialog();
         }
 
         private void materiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             wfMateria mat = new wfMateria();
-            mat.MdiParent = this;
-            mat.Show();
+            mat.ShowDialog();
         }
 
         private void corrienteLiterariaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             wfCorrienteLiteraria mat = new wfCorrienteLiteraria();
-            mat.MdiParent = this;
-            mat.Show();
+            mat.ShowDialog();
         }
 
         private void buscarToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -95,6 +91,12 @@ namespace Prototipo.Principal
             wfCLogin info3 = new wfCLogin();
             info3.MdiParent = this;
             info3.Show();
+        }
+
+        private void editorialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            wfEditorial cedit = new wfEditorial();
+            cedit.ShowDialog();
         }
     }
 }

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*Autor: "Carol Flores"
+ *Fecha: "10/Agosto/2014"
+ *Comentario: "Este modulo realizara el ingreso de la materia respecto a su Corriente Literaria"
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -77,12 +83,14 @@ namespace Prototipo
 
             if (iBandera == 1)
             {
-                MessageBox.Show("Autor Guardado Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Materia Guardada Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimpiarTextBox(this);
+                Desabilitar();
+
             }
             else
             {
-                MessageBox.Show("No se pudo guardar el autor", "Fallo!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("No se pudo guardar la materia", "Fallo!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }
@@ -97,5 +105,42 @@ namespace Prototipo
             LimpiarTextBox(this);
             txtMat.Focus();
         }
+
+        private void wfMateria_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        public void Habilitar ()
+        {
+            txtMat.Enabled=true;
+            btnIngreMat.Enabled=true;
+            btnLimpiar.Enabled=true;
+
+        }
+        public void Desabilitar()
+        {
+            txtMat.Enabled = false;
+            btnIngreMat.Enabled = false;
+            btnLimpiar.Enabled = false;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Habilitar();
+        }
+
+        private void txtMat_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se acepta el ingreso de letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
     }
 }

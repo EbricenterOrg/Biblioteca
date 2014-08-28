@@ -41,6 +41,7 @@
             this.txtCiudad = new System.Windows.Forms.TextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -55,8 +56,9 @@
             // 
             // btnIngreEdit
             // 
+            this.btnIngreEdit.Enabled = false;
             this.btnIngreEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnIngreEdit.Image")));
-            this.btnIngreEdit.Location = new System.Drawing.Point(282, 299);
+            this.btnIngreEdit.Location = new System.Drawing.Point(232, 294);
             this.btnIngreEdit.Name = "btnIngreEdit";
             this.btnIngreEdit.Size = new System.Drawing.Size(44, 36);
             this.btnIngreEdit.TabIndex = 6;
@@ -74,11 +76,13 @@
             // 
             // txtNomEdit
             // 
+            this.txtNomEdit.Enabled = false;
             this.txtNomEdit.Location = new System.Drawing.Point(226, 131);
             this.txtNomEdit.Name = "txtNomEdit";
             this.txtNomEdit.Size = new System.Drawing.Size(100, 20);
             this.txtNomEdit.TabIndex = 8;
             this.txtNomEdit.TextChanged += new System.EventHandler(this.txtNomEdit_TextChanged);
+            this.txtNomEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNomEdit_KeyPress);
             // 
             // lblDirec
             // 
@@ -91,10 +95,12 @@
             // 
             // txtDirec
             // 
+            this.txtDirec.Enabled = false;
             this.txtDirec.Location = new System.Drawing.Point(226, 157);
             this.txtDirec.Name = "txtDirec";
             this.txtDirec.Size = new System.Drawing.Size(100, 20);
             this.txtDirec.TabIndex = 10;
+            this.txtDirec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDirec_KeyPress);
             // 
             // lblTel
             // 
@@ -107,10 +113,12 @@
             // 
             // txtTel
             // 
+            this.txtTel.Enabled = false;
             this.txtTel.Location = new System.Drawing.Point(226, 183);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(100, 20);
             this.txtTel.TabIndex = 12;
+            this.txtTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTel_KeyPress);
             // 
             // lblCiudad
             // 
@@ -123,15 +131,18 @@
             // 
             // txtCiudad
             // 
+            this.txtCiudad.Enabled = false;
             this.txtCiudad.Location = new System.Drawing.Point(226, 209);
             this.txtCiudad.Name = "txtCiudad";
             this.txtCiudad.Size = new System.Drawing.Size(100, 20);
             this.txtCiudad.TabIndex = 14;
+            this.txtCiudad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCiudad_KeyPress);
             // 
             // btnLimpiar
             // 
+            this.btnLimpiar.Enabled = false;
             this.btnLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.Image")));
-            this.btnLimpiar.Location = new System.Drawing.Point(232, 299);
+            this.btnLimpiar.Location = new System.Drawing.Point(182, 294);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(44, 36);
             this.btnLimpiar.TabIndex = 15;
@@ -141,18 +152,29 @@
             // btnCerrar
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(182, 299);
+            this.btnCerrar.Location = new System.Drawing.Point(132, 294);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(44, 36);
             this.btnCerrar.TabIndex = 16;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Image = global::Prototipo.Properties.Resources.Add;
+            this.btnAgregar.Location = new System.Drawing.Point(282, 294);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(44, 36);
+            this.btnAgregar.TabIndex = 17;
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
             // wfEditorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 357);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtCiudad);
@@ -165,10 +187,11 @@
             this.Controls.Add(this.lblNomEdit);
             this.Controls.Add(this.btnIngreEdit);
             this.Controls.Add(this.label2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "wfEditorial";
-            this.Text = "wfEditorial";
+            this.Text = "Editorial";
             this.Load += new System.EventHandler(this.wfEditorial_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -189,5 +212,6 @@
         private System.Windows.Forms.TextBox txtCiudad;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnAgregar;
     }
 }

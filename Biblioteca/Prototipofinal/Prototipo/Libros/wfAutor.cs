@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*Autor: "Carol Flores"
+ *Fecha: "08/Agosto/2014"
+ *Comentario: "Este modulo realizara el ingreso de los datos un autor del libro"
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -97,7 +102,7 @@ namespace Prototipo
            {
                MessageBox.Show("Autor Guardado Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                LimpiarTextBox(this);
-               txtNomAutor.Focus();
+               Desabilitar();
            }
            else
            {
@@ -128,5 +133,53 @@ namespace Prototipo
             this.Close();
 
         }
+
+
+        public void Habilitar()
+        {
+            txtNomAutor.Enabled = true;
+            txtApeAutor.Enabled = true;
+            btnIngreAutor.Enabled = true;
+            btnLimpiar.Enabled = true;
+        }
+        public void Desabilitar()
+        {
+            txtNomAutor.Enabled = false;
+            txtApeAutor.Enabled = false;
+            btnIngreAutor.Enabled = false;
+            btnLimpiar.Enabled = false;
+        }
+
+        private void btnIngreso_Click(object sender, EventArgs e)
+        {
+            Habilitar();
+        }
+
+        private void txtNomAutor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNomAutor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se acepta el ingreso de letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtApeAutor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se acepta el ingreso de letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+
+        }
+
     }
 }

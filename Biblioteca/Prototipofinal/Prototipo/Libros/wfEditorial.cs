@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*Autor: "Carol Flores"
+ *Fecha: "09/Agosto/2014"
+ *Comentario: "Este modulo realizara el ingreso de la Editorial del libro"
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -77,7 +83,7 @@ namespace Prototipo
             else
             {
                 csConexion.ObtenerConexion();
-                //MessageBox.Show("Conectado");
+               
                 a = "";
 
                 MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_editorial values ('{0}','{1}','{2}','{3}','{4}')", a, txtNomEdit.Text, txtDirec.Text, txtTel.Text, txtCiudad.Text), csConexion.ObtenerConexion());
@@ -88,14 +94,14 @@ namespace Prototipo
 
             if (iBandera == 1)
             {
-                MessageBox.Show("Autor Guardado Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Editorial Guardado Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimpiarTextBox(this);
-                txtNomEdit.Focus();
+                Desabilitar();
 
             }
             else
             {
-                MessageBox.Show("No se pudo guardar el autor", "Fallo!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("No se pudo guardar la Editorial", "Fallo!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }
@@ -116,5 +122,76 @@ namespace Prototipo
         {
 
         }
+
+
+        public void Habilitar()
+        {
+            txtNomEdit.Enabled = true;
+            txtDirec.Enabled = true;
+            txtCiudad.Enabled = true;
+            txtTel.Enabled = true;
+            btnIngreEdit.Enabled = true;
+            btnLimpiar.Enabled = true;
+        }
+
+        public void Desabilitar()
+        {
+            txtNomEdit.Enabled = false;
+            txtDirec.Enabled = false;
+            txtCiudad.Enabled = false;
+            txtTel.Enabled = false;
+            btnIngreEdit.Enabled = false;
+            btnLimpiar.Enabled = false;
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Habilitar();
+        }
+
+        private void txtNomEdit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se acepta el ingreso de letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtDirec_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se acepta el ingreso de letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtTel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+       
+
+        private void txtCiudad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se acepta el ingreso de letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+
+        }
+
+
     }
 }
