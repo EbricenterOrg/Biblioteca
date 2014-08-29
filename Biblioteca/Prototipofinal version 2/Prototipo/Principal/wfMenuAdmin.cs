@@ -68,29 +68,25 @@ namespace Prototipo.Principal
         private void buscarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             wfBusquedaLibro info = new wfBusquedaLibro();
-            info.MdiParent = this;
-            info.Show();
+            info.ShowDialog();
         }
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             wfEditar info = new wfEditar();
-            info.MdiParent = this;
-            info.Show();
+            info.ShowDialog();
         }
 
         private void ingresoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             wfCPersonas info2 = new wfCPersonas();
-            info2.MdiParent = this;
-            info2.Show();
+            info2.ShowDialog();
         }
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
             wfCLogin info3 = new wfCLogin();
-            info3.MdiParent = this;
-            info3.Show();
+            info3.ShowDialog();
         }
 
         private void editorialToolStripMenuItem_Click(object sender, EventArgs e)

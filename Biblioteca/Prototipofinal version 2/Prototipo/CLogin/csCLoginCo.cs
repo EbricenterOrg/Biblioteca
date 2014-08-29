@@ -11,9 +11,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Data.Odbc;
 
 namespace Prototipo
 {
+    
     class CLoginCo
     {
         public static int Agregar(CLogin pLogin) /*Metodo que nos permite agregar nuevos usuarios para loguearse.. */
@@ -22,7 +24,9 @@ namespace Prototipo
             int retorno = 0;
 
             MySqlCommand comando = new MySqlCommand(string.Format("Insert into tab_usuario (usuario, contras, tab_persona_idpersona) values ('{0}','{1}','{2}')",
-                pLogin.Usuario, pLogin.Contra, pLogin.IdPersona), csConexion.ObtenerConexion());
+            pLogin.Usuario, pLogin.Contra, pLogin.idPersona), csConexion.ObtenerConexion());
+                //OdbcCommand comando=  new OdbcCommand(string.Format("Insert into tab_usuario (usuario, contras, tab_persona_idpersona) values ('{0}','{1}','{2}')",
+                //pLogin.Usuario, pLogin.Contra, pLogin.IdPersona), csConexion.ObtenerConexionprueba());
 
             retorno = comando.ExecuteNonQuery();
 
@@ -43,3 +47,4 @@ namespace Prototipo
         }
     }
 }
+

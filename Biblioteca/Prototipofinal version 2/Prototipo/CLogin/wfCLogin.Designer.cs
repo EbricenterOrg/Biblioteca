@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wfCLogin));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtIdPersona = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.cboPersona = new System.Windows.Forms.ComboBox();
             this.txtContra = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -42,19 +42,17 @@
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.dataSetusuarios = new Prototipo.DataSetusuarios();
             this.dataSetusuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetusuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetusuariosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtIdPersona);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.cboPersona);
             this.groupBox1.Controls.Add(this.txtContra);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label6);
@@ -67,15 +65,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Principales";
             // 
-            // txtIdPersona
-            // 
-            this.txtIdPersona.Enabled = false;
-            this.txtIdPersona.Location = new System.Drawing.Point(98, 39);
-            this.txtIdPersona.Margin = new System.Windows.Forms.Padding(2);
-            this.txtIdPersona.Name = "txtIdPersona";
-            this.txtIdPersona.Size = new System.Drawing.Size(131, 20);
-            this.txtIdPersona.TabIndex = 13;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -83,9 +72,19 @@
             this.label2.Location = new System.Drawing.Point(31, 42);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Id Persona";
+            this.label2.Text = "Persona";
+            // 
+            // cboPersona
+            // 
+            this.cboPersona.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPersona.FormattingEnabled = true;
+            this.cboPersona.Location = new System.Drawing.Point(94, 39);
+            this.cboPersona.Name = "cboPersona";
+            this.cboPersona.Size = new System.Drawing.Size(135, 21);
+            this.cboPersona.TabIndex = 23;
+            this.cboPersona.SelectedIndexChanged += new System.EventHandler(this.cboPersona_SelectedIndexChanged);
             // 
             // txtContra
             // 
@@ -96,6 +95,7 @@
             this.txtContra.PasswordChar = '*';
             this.txtContra.Size = new System.Drawing.Size(131, 20);
             this.txtContra.TabIndex = 11;
+            this.txtContra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContra_KeyPress);
             // 
             // label1
             // 
@@ -127,6 +127,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(131, 20);
             this.txtUsuario.TabIndex = 10;
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
             // pictureBox1
             // 
@@ -186,16 +187,6 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // dataSetusuarios
-            // 
-            this.dataSetusuarios.DataSetName = "DataSetusuarios";
-            this.dataSetusuarios.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataSetusuariosBindingSource
-            // 
-            this.dataSetusuariosBindingSource.DataSource = this.dataSetusuarios;
-            this.dataSetusuariosBindingSource.Position = 0;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -229,7 +220,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetusuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetusuariosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -239,7 +229,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtIdPersona;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtContra;
         private System.Windows.Forms.Label label1;
@@ -250,8 +239,8 @@
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private DataSetusuarios dataSetusuarios;
         private System.Windows.Forms.BindingSource dataSetusuariosBindingSource;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cboPersona;
     }
 }

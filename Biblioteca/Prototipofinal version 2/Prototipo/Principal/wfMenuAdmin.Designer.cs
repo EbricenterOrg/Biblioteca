@@ -46,8 +46,6 @@
             this.corrienteLiterariaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.libroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportarReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -214,8 +212,6 @@
             this.libroToolStripMenuItem.AutoSize = false;
             this.libroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresoToolStripMenuItem,
-            this.editarToolStripMenuItem1,
-            this.eliminarToolStripMenuItem1,
             this.loginToolStripMenuItem});
             this.libroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("libroToolStripMenuItem.Image")));
             this.libroToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -229,29 +225,16 @@
             // 
             this.ingresoToolStripMenuItem.Image = global::Prototipo.Properties.Resources.Add;
             this.ingresoToolStripMenuItem.Name = "ingresoToolStripMenuItem";
-            this.ingresoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.ingresoToolStripMenuItem.Text = "Ingreso";
+            this.ingresoToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.ingresoToolStripMenuItem.Text = "Ingreso Persona";
             this.ingresoToolStripMenuItem.Click += new System.EventHandler(this.ingresoToolStripMenuItem_Click);
-            // 
-            // editarToolStripMenuItem1
-            // 
-            this.editarToolStripMenuItem1.Image = global::Prototipo.Properties.Resources.Modify;
-            this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
-            this.editarToolStripMenuItem1.Text = "Editar";
-            // 
-            // eliminarToolStripMenuItem1
-            // 
-            this.eliminarToolStripMenuItem1.Image = global::Prototipo.Properties.Resources.Delete;
-            this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
-            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
-            this.eliminarToolStripMenuItem1.Text = "Eliminar";
             // 
             // loginToolStripMenuItem
             // 
+            this.loginToolStripMenuItem.Image = global::Prototipo.Properties.Resources.Add;
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.loginToolStripMenuItem.Text = "Login";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.loginToolStripMenuItem.Text = "Ingreso Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // reporteToolStripMenuItem
@@ -355,8 +338,6 @@
         private System.Windows.Forms.ToolStripMenuItem materiaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem corrienteLiterariaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exportarReporteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem informToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manualToolStripMenuItem;

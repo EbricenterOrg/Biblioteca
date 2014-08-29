@@ -9,7 +9,8 @@ namespace Prototipo
     {
 
        public int Id_Persona { get; set; }
-       public string IdPersona { get; set; }
+       //public string IdPersona { get; set; }
+       public string idPersona { get; set; }
        public string Usuario { get; set; }
        public string Contra { get; set; }
        
@@ -19,7 +20,8 @@ namespace Prototipo
 
        {
            this.Id_Persona = pId_Persona;
-           this.IdPersona = pIdPersona;
+           //this.IdPersona = pIdPersona;
+           this.idPersona = pIdPersona;
            this.Usuario = pUsuario;
            this.Contra = pContra;
        }
