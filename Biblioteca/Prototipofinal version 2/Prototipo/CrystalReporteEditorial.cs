@@ -16,14 +16,14 @@ namespace Prototipo {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class CrystalReport1 : ReportClass {
+    public class CrystalReporteEditorial : ReportClass {
         
-        public CrystalReport1() {
+        public CrystalReporteEditorial() {
         }
         
         public override string ResourceName {
             get {
-                return "CrystalReport1.rpt";
+                return "CrystalReporteEditorial.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Prototipo {
         
         public override string FullResourceName {
             get {
-                return "Prototipo.CrystalReport1.rpt";
+                return "Prototipo.CrystalReporteEditorial.rpt";
             }
             set {
                 // Do nothing
@@ -106,9 +106,9 @@ namespace Prototipo {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCrystalReport1 : Component, ICachedReport {
+    public class CachedCrystalReporteEditorial : Component, ICachedReport {
         
-        public CachedCrystalReport1() {
+        public CachedCrystalReporteEditorial() {
         }
         
         [Browsable(false)]
@@ -145,7 +145,7 @@ namespace Prototipo {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            CrystalReport1 rpt = new CrystalReport1();
+            CrystalReporteEditorial rpt = new CrystalReporteEditorial();
             rpt.Site = this.Site;
             return rpt;
         }

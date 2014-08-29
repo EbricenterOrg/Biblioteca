@@ -1,6 +1,6 @@
 ﻿namespace Prototipo.Libros
 {
-    partial class wfReporte
+    partial class wfReportAutor
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wfReportAutor));
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.CrystalReport11 = new Prototipo.CrystalReport1();
+            this.CristalReportAutor1 = new Prototipo.CristalReportAutor();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -40,20 +41,20 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.CrystalReport11;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1362, 582);
+            this.crystalReportViewer1.ReportSource = this.CristalReportAutor1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1344, 582);
             this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
-            // wfReporte
+            // wfReportAutor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1362, 582);
+            this.ClientSize = new System.Drawing.Size(1344, 582);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "wfReporte";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "wfReportAutor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "wfReporte";
+            this.Text = "Reporte Libro por Autor";
             this.ResumeLayout(false);
 
         }
@@ -61,6 +62,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private CrystalReport1 CrystalReport11;
+        private CristalReportAutor CristalReportAutor1;
     }
 }
